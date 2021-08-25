@@ -11,7 +11,7 @@ if(NOT GTEST_FOUND)
     message(WARNING "Failed to find the GTest libraries.")
 endif()
 
-file(GLOB_RECURSE TEST_VISITOR_SOURCE_FILES ${CMAKE_HOME_DIRECTORY}/${MODULE_DIRECTORY}/tests/${TEST_UNIT_MODULE_DIRECTORY}/*.cpp)
+file(GLOB_RECURSE TEST_VISITOR_SOURCE_FILES ${CMAKE_CURRENT_SOURCE_DIR}/${TEST_UNIT_MODULE_DIRECTORY}/*.cpp)
 
 add_executable(${TEST_UNIT} ${TEST_VISITOR_SOURCE_FILES})
 target_link_libraries(${TEST_UNIT} gtest gtest_main pthread ${MODULE_NAME})

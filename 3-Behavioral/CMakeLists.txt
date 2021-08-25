@@ -11,4 +11,3 @@ add_subdirectory(20.State)
 add_subdirectory(21.Strategy)
 add_subdirectory(22.TemplateMethod)
 add_subdirectory(23.Visitor)
-
