@@ -1,5 +1,5 @@
-#include "FactoryMethod/Skyline.h"
-#include "FactoryMethod/NissanFactory.h"
+#include "FactoryMethod/Product/Skyline.h"
+#include "FactoryMethod/Factory/NissanFactory.h"
 
 namespace GoF {
 

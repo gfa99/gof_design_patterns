@@ -1,7 +1,7 @@
 #include <iostream>
-#include "FactoryMethod/ICar.h"
-#include "FactoryMethod/TeslaFactory.h"
-#include "FactoryMethod/NissanFactory.h"
+#include "FactoryMethod/Product/ICar.h"
+#include "FactoryMethod/Factory/TeslaFactory.h"
+#include "FactoryMethod/Factory/NissanFactory.h"
 
 using GoF::FactoryMethod::ICar;
 using GoF::FactoryMethod::TeslaFactory;

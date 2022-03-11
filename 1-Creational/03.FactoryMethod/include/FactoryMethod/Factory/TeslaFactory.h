@@ -17,16 +17,16 @@
  *     Edson Araújo Soares
  */
 
-#ifndef GOF_FACTORY_METHOD_NISSAN_FACTORY_H
-#define GOF_FACTORY_METHOD_NISSAN_FACTORY_H
+#ifndef GOF_FACTORY_METHOD_TESLA_FACTORY_H
+#define GOF_FACTORY_METHOD_TESLA_FACTORY_H
 
-#include "FactoryMethod/ICarFactory.h"
+#include "FactoryMethod/Factory/ICarFactory.h"
 
 namespace GoF {
 
     namespace FactoryMethod {
 
-        class NissanFactory : public ICarFactory
+        class TeslaFactory : public ICarFactory
         {
         public:
             ICar * create();

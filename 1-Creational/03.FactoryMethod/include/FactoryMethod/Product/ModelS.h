@@ -21,7 +21,7 @@
 #define GOF_FACTORY_METHOD_MODEL_S_H
 
 #include <string>
-#include "FactoryMethod/ICar.h"
+#include "FactoryMethod/Product/ICar.h"
 
 namespace GoF {
 

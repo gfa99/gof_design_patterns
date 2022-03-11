@@ -17,36 +17,22 @@
  *     Edson Araújo Soares
  */
 
-#ifndef GOF_FACTORY_METHOD_SKYLINE_H
-#define GOF_FACTORY_METHOD_SKYLINE_H
+#ifndef GOF_FACTORY_METHOD_ICAR_FACTORY_H
+#define GOF_FACTORY_METHOD_ICAR_FACTORY_H
 
-#include <string>
-#include "FactoryMethod/ICar.h"
+#include "FactoryMethod/Product/ICar.h"
 
 namespace GoF {
 
     namespace FactoryMethod {
 
-        class Skyline : public ICar
+        class ICarFactory
         {
         public:
-            Skyline(
-                const std::string &,
-                const std::string &,
-                const std::string &,
-                const std::string &
-            );
+            virtual ~ICarFactory()
+            { };
 
-            std::string getName() const;
-            std::string getColor() const;
-            std::string getVehicleYear() const;
-            std::string getOriginCountry() const;
-
-        private:
-            std::string name;
-            std::string color;
-            std::string vehicleYear;
-            std::string originCountry;
+            virtual ICar * create() = 0;
 
         };
 

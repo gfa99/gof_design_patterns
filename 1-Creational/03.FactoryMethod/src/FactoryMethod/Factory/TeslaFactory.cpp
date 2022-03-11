@@ -1,5 +1,5 @@
-#include "FactoryMethod/ModelS.h"
-#include "FactoryMethod/TeslaFactory.h"
+#include "FactoryMethod/Product/ModelS.h"
+#include "FactoryMethod/Factory/TeslaFactory.h"
 
 namespace GoF {
 

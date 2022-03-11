@@ -1,4 +1,4 @@
-#include "FactoryMethod/Skyline.h"
+#include "FactoryMethod/Product/Skyline.h"
 
 namespace GoF {
 

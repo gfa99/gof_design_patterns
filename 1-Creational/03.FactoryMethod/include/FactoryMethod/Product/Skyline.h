@@ -17,19 +17,36 @@
  *     Edson Araújo Soares
  */
 
-#ifndef GOF_FACTORY_METHOD_TESLA_FACTORY_H
-#define GOF_FACTORY_METHOD_TESLA_FACTORY_H
+#ifndef GOF_FACTORY_METHOD_SKYLINE_H
+#define GOF_FACTORY_METHOD_SKYLINE_H
 
-#include "FactoryMethod/ICarFactory.h"
+#include <string>
+#include "FactoryMethod/Product/ICar.h"
 
 namespace GoF {
 
     namespace FactoryMethod {
 
-        class TeslaFactory : public ICarFactory
+        class Skyline : public ICar
         {
         public:
-            ICar * create();
+            Skyline(
+                const std::string &,
+                const std::string &,
+                const std::string &,
+                const std::string &
+            );
+
+            std::string getName() const;
+            std::string getColor() const;
+            std::string getVehicleYear() const;
+            std::string getOriginCountry() const;
+
+        private:
+            std::string name;
+            std::string color;
+            std::string vehicleYear;
+            std::string originCountry;
 
         };
 

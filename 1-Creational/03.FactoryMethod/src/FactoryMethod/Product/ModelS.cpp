@@ -1,4 +1,4 @@
-#include "FactoryMethod/ModelS.h"
+#include "FactoryMethod/Product/ModelS.h"
 
 namespace GoF {
 
